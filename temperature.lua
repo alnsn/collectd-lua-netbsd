@@ -18,7 +18,7 @@ local function read_temperature(temperature)
 	for l in io.popen("/usr/sbin/envstat"):lines() do
 		local k, v = l:match("^%s*(%S+)%s+temperature:%s+([.0-9]+)")
 		if k and v then
-			k = 'temperature-' .. k:gsub("/", "-")
+			k = "temperature-" .. k:gsub("/", "-")
 			temperature[k] = tonumber(v)
 		end
 	end
