@@ -1,2 +1,2 @@
 # collectd-lua-netbsd
-Lua plugin for collectd on NetBSD
+Lua plugins for collectd on NetBSD.
